@@ -1,0 +1,2 @@
+---
+rapidpro_indexer_package_directory_path: "{{ rapidpro_indexer_package_directory_root }}/{{ rapidpro_indexer_package_directory_name }}"
