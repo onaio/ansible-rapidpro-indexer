@@ -28,9 +28,9 @@ def test_rapidpro_indexer_app_files(host):
     assert appVersionedDir.is_directory
     assert oct(appVersionedDir.mode) == "0o755"
 
-    envFile = host.file("/home/rapidpro-indexer/app/environment")
-    assert envFile.exists
-    assert envFile.user == "rapidpro-indexer"
-    assert envFile.group == "rapidpro-indexer"
-    assert envFile.is_file
-    assert oct(envFile.mode) == "0o750"
+    configFile = host.file("/home/rapidpro-indexer/app/indexer.toml")
+    assert configFile.exists
+    assert configFile.user == "rapidpro-indexer"
+    assert configFile.group == "rapidpro-indexer"
+    assert configFile.is_file
+    assert oct(configFile.mode) == "0o750"
