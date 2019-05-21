@@ -27,15 +27,11 @@ rapidpro_indexer_package_directory_root: "{{ rapidpro_indexer_system_home }}/app
 # The name to give the directory the RapidPro Indexer binary is copied to
 rapidpro_indexer_package_directory_name: "{{ rapidpro_indexer_version }}"
 
-# RapidPro Indexer environment variables to be set. Check
-# https://github.com/nyaruka/rp-indexer#usage
-# for the full list of variables
-rapidpro_indexer_environment_vars:
-  INDEXER_DB: "postgres://localhost/rapidpro"
-  INDEXER_ELASTIC_URL: "http://localhost:9200"
-  INDEXER_INDEX: "contacts"
-  INDEXER_POLL: 5
-  INDEXER_REBUILD: false
+# Whether to rebuild the index before starting the service
+rapidpro_indexer_rebuild: false
+
+# Whether to clean old indexes when index is rebuilt
+rapidpro_indexer_cleanup: true
 ```
 
 Dependencies
