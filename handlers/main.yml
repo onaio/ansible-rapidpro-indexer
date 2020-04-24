@@ -5,3 +5,4 @@
     state: restarted
     enabled: true
     daemon_reload: true
+  when: not rapidpro_indexer_install_only | default(false)
