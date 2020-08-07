@@ -19,9 +19,9 @@ def test_rapidpro_indexer_app_files(host):
     assert appDir.user == "rapidpro-indexer"
     assert appDir.group == "rapidpro-indexer"
     assert appDir.is_symlink
-    assert appDir.linked_to == "/home/rapidpro-indexer/app-versioned/1.0.26"
+    assert appDir.linked_to == "/home/rapidpro-indexer/app-versioned/5.6.0"
 
-    appVersionedDir = host.file("/home/rapidpro-indexer/app-versioned/1.0.26")
+    appVersionedDir = host.file("/home/rapidpro-indexer/app-versioned/5.6.0")
     assert appVersionedDir.exists
     assert appVersionedDir.user == "rapidpro-indexer"
     assert appVersionedDir.group == "rapidpro-indexer"

@@ -1,5 +1,5 @@
 ---
-rapidpro_indexer_version: "1.0.26"
+rapidpro_indexer_version: "5.6.0"
 rapidpro_indexer_system_user: "rapidpro-indexer"
 rapidpro_indexer_system_group: "rapidpro-indexer"
 rapidpro_indexer_service_name: "{{ rapidpro_indexer_system_user }}"
