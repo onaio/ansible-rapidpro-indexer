@@ -1,5 +1,5 @@
 ---
-rapidpro_indexer_version: "1.0.26"
+rapidpro_indexer_version: "5.6.0"
 rapidpro_indexer_system_user: "rapidpro-indexer"
 rapidpro_indexer_system_group: "rapidpro-indexer"
 rapidpro_indexer_service_name: "{{ rapidpro_indexer_system_user }}"
@@ -15,7 +15,13 @@ rapidpro_indexer_package_directory_root: "{{ rapidpro_indexer_system_home }}/app
 # The name to give the directory the RapidPro Indexer binary is copied to
 rapidpro_indexer_package_directory_name: "{{ rapidpro_indexer_version }}"
 rapidpro_indexer_active_package_symlink: "{{ rapidpro_indexer_system_home }}/app"
-rapidpro_indexer_postgresql_url: "postgres://localhost/rapidpro"
+rapidpro_indexer_postgresql_user: "rapidpro"
+rapidpro_indexer_postgresql_password: "rapidpro"
+rapidpro_indexer_postgresql_host: "127.0.0.1"
+rapidpro_indexer_postgresql_port: 5432
+rapidpro_indexer_postgresql_database: "rapidpro"
+rapidpro_indexer_postgresql_sslmode: "require"
+rapidpro_indexer_postgresql_url: "postgres://{{ rapidpro_indexer_postgresql_user }}:{{ rapidpro_indexer_postgresql_password }}@{{ rapidpro_indexer_postgresql_host }}:{{ rapidpro_indexer_postgresql_port }}/{{ rapidpro_indexer_postgresql_database }}?sslmode={{ rapidpro_indexer_postgresql_sslmode }}"
 rapidpro_indexer_elasticsearch_url: "http://localhost:9200"
 rapidpro_indexer_index: "contacts"
 rapidpro_indexer_poll: 5
