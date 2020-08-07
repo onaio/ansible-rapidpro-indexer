@@ -36,5 +36,6 @@
     dest: "{{ rapidpro_indexer_active_package_symlink }}"
     owner: "{{ rapidpro_indexer_system_user }}"
     group: "{{ rapidpro_indexer_system_group }}"
+    follow: false
   notify:
     - restart rapidpro-indexer
