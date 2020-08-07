@@ -1,4 +1,4 @@
-onaio - RapidPro Indexer [![Build Status](https://travis-ci.org/onaio/ansible-rapidpro-indexer.svg?branch=master)](https://travis-ci.org/onaio/ansible-rapidpro-indexer)
+onaio - RapidPro Indexer [![Build Status](https://github.com/onaio/ansible-rapidpro-indexer/workflows/CI/badge.svg)](https://github.com/onaio/ansible-rapidpro-indexer/actions?query=workflow%3ACI)
 =========
 
 Installs and configures [RapidPro Indexer](https://github.com/nyaruka/rp-indexer).
