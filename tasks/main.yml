@@ -7,4 +7,4 @@
 
 - name: Rebuild the index
   include_tasks: rebuild.yml
-  when: rapidpro_indexer_rebuild
+  when: rapidpro_indexer_rebuild| bool
